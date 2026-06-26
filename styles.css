@@ -1,0 +1,60 @@
+/* Basic custom styling for the MVP ecommerce app */
+body {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+.card-product {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+.product-img {
+  min-height: 220px;
+  object-fit: cover;
+}
+.badge-category {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  opacity: 0.95;
+}
+.hero {
+  background: linear-gradient(135deg, #6c5ce7 0%, #0984e3 100%);
+  color: white;
+}
+.hero .btn-primary {
+  background: #ffeaa7;
+  border-color: #ffeaa7;
+  color: #2d3436;
+}
+.hero .btn-primary:hover {
+  background: #fdcb6e;
+  border-color: #fdcb6e;
+}
+.filter-pill {
+  cursor: pointer;
+}
+.filter-pill.active {
+  background-color: #6c5ce7;
+  color: white;
+}
+.card-body {
+  min-height: 180px;
+}
+.offcanvas-body {
+  padding-top: 0.5rem;
+}
+.product-rating {
+  color: #fdcb6e;
+}
+.cart-empty {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+@media (max-width: 575px) {
+  .product-img {
+    min-height: 180px;
+  }
+}
